@@ -1,0 +1,207 @@
+*{
+    margin:0%;
+    padding: 0%;
+    font-family: sans-serif;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to left,rgb(206, 70, 7),rgb(236, 131, 70));
+}
+
+.nav{
+    width: 80%;
+    position: sticky;
+    margin: 20px auto;
+    z-index: 1;
+    display: flex;
+    text-align: center;
+}
+
+.links{
+    margin-top: 20px;
+    flex: 1;
+    text-align: right;
+}
+.links img{
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.links img:hover{
+    background-color: black;
+}
+.tabs{
+    margin-top: 20px;
+    flex: 1;
+    text-align: right;
+    float:inline-end
+}
+
+.tabs ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.tabs ul li:hover{
+    background-color: rgb(223, 139, 29);
+}
+
+.content{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transform: translateY(-50%);
+}
+
+#circle{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    transition: 1s;
+}
+
+.feature{
+    position: absolute;
+    display: flex;
+    color: rgb(236, 131, 70);
+}
+
+.feature div{
+    margin-left: 30px;
+    font-size: 15px;
+}
+.one{
+    top: 480px;
+    right: 160px;
+}
+
+.two{
+    top: 150px;
+    left: 450px;
+    transform: rotate(-90deg);
+}
+
+.three{
+    bottom: 480px;
+    left: 80px;
+    transform: rotate(-180deg);
+}
+
+.four{
+    bottom: 150px;
+    right: 450px;
+    transform: rotate(-270deg);
+}
+
+.burger{
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translateY(-50%);
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.controls{
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.controls h1{
+    margin: 2px 0;
+    color: rgb(0, 0, 0);
+    font-family: cursive;
+    font-style:italic;
+    font-size: 60px;
+}
+
+#up{
+    width: 15px;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+
+#down{
+    width: 15px;
+    cursor: pointer;
+}
+
+.overlay{
+    width: 0;
+    height: 0;
+    border-top: 500px solid rgb(223, 139, 29) ;
+    border-right: 500px solid transparent;
+    border-bottom: 500px solid rgb(223, 139, 29);
+    border-left: 500px solid rgb(0, 0, 0);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.offer{
+    width: 100%;
+    position: absolute
+}
+
+.info{
+    padding-top: 40px;
+    background-color: black;
+    min-width: 100%;
+    min-height: 300px;
+}
+.info h4{
+    color: rgb(223, 139, 29);
+    text-align: center;
+    float: inherit;
+    vertical-align: center;
+    margin-left: 80px;
+    margin-right: 80px;
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+
+.info h3{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    margin-left: 50px;
+    margin-top: 60px;
+    padding-bottom: 20px;
+}
+
+.boxes{
+    background-color: rgb(223, 139, 29);
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 30px;
+    flex: 1;
+}
+
+.boxes ul li{
+    text-align: center;
+    border: 20px;
+    font-size: 27px;
+    cursor: pointer;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.boxes:hover{
+    transform: rotateY(40deg);
+    transition-duration: 2s;
+}
