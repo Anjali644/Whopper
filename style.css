@@ -345,4 +345,8 @@
 }
 
 @media screen and (max-width: 600px) {
-      
+      .third{
+          padding-top: 5%;
+          padding-bottom: 5%;
+    }
+}
