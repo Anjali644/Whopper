@@ -4,41 +4,53 @@
     font-family: sans-serif;
 }
 .top{
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     background-color: #ddffbc;
     min-height: 3vh;
     overflow:initial;
 }
+#sticky{
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 99;
+    top: 0;
+    background-color: #5f8559;
+}
 .logo{
     position: absolute;
     float: left;
-    padding-left: 20px;
+    padding-left: 15px;
     z-index: 1;
 }
 .tabs{
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 25px;
     flex: 1;
     text-align: right;
     float:inline-end
 }
 .tabs ul li{
-    padding: 2px;
+    padding: 5px;
     list-style: none;
     display: inline-block;
     margin: 0 20px;
     cursor: pointer;
+    font-size: 15px;
 }
 .tabs ul li:hover{
     background-color: rgb(223, 139, 29);
+    font-size: 120%;
+    transition: 0.7s;
 }
+
 .main{
     width: 100%;
-    background-image:url("bg.png");
+    background-image:url(images/bg.png);
     background-repeat: repeat;
 }
 .first{
-    padding-top: 50px;
+    padding-top: 30px;
 }
 .content{
     width: 1000px;
@@ -68,22 +80,34 @@
 }
 .one{
     top: 480px;
-    right: 75px;
+    right: 53px;
+}
+.one h1{
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 .two{
-    top: 80px;
-    left: 380px;
+    top: 55px;
+    left: 360px;
     transform: rotate(-90deg);
+}
+.two h1{
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 .three{
     bottom: 480px;
-    left: -170px;
+    left: -200px;
     transform: rotate(-180deg);
 }
+.three h1{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
 .four{
-    bottom: 60px;
-    right: 363px;
+    bottom: 50px;
+    right: 355px;
     transform: rotate(-270deg);
+}
+.four h1{
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 .burger{
     width: 500px;
@@ -99,13 +123,6 @@
     transform: translateY(-50%);
     text-align: center;
 }
-.controls h1{
-    margin: 2px 0;
-    color: rgb(0, 0, 0);
-    font-family: cursive;
-    font-style:italic;
-    font-size: 60px;
-}
 #up{
     margin-top: 80px;
     width: 50px;
@@ -118,6 +135,7 @@
     cursor: pointer;
 }
 .overlay{
+    margin-top: 40px;
     top: 275;
     width: 100;
     height: 100;
@@ -190,22 +208,34 @@
     min-height: 100px;
 }
 .second{
-    background-color: #91c788;
     min-width: 100%;
     min-height: 100vh;
 }
 .info{
-    padding: 40px;
+    padding: 60px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.5);
     border: 2px solid #52734d;
     background-color: #feffde;
     text-align: center;
     min-width: 250px;
-    font-size: 20px;
     color:#52734d;
 }
+.info h3{
+    padding-top: 20px;
+    font-size: 50px;
+}
+.info h4{
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.info h3:hover{
+    background-color: #feffde;
+    font-size: 100%;
+    transition: 2s;
+}
 .video{
-    
+    background-color: #5f8559;
     padding-left: 25%;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -243,6 +273,7 @@
 }
 .small:hover{
     background-color: #91c788;
+    cursor: pointer;
 }
 .medium{
     margin-top: 10px;
@@ -263,6 +294,7 @@
 }
 .medium:hover{
     background-color: #91c788;
+    cursor: pointer;
 }
 .large{
     margin-top: 10px;
@@ -284,6 +316,7 @@
 }
 .large:hover{
     background-color: #91c788;
+    cursor: pointer;
 }
 .last{
     background-color: #ddffbc;
@@ -303,13 +336,13 @@
     cursor: pointer;
 }
 .links img:hover{
-    background-color:#feffde;
+    background-color:#91c788;
 }
 .copy{
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
 }
-@media screen and (max-width: 700px){
-    
-}
+
+@media screen and (max-width: 600px) {
+      
