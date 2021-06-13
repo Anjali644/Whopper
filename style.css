@@ -46,7 +46,7 @@
 
 .main{
     width: 100%;
-    background-image:url(bg.png);
+    background-image:url("bg.png");
     background-repeat: repeat;
 }
 .first{
